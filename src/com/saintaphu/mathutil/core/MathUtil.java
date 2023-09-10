@@ -19,12 +19,10 @@ public class MathUtil {
         
         if(n==0 || n==1) return 1;
         
-        long product =1;
-        for (int i = 1 ; i <= n; i++) 
-            product *= i;
+        
     
         
-        return product;
+        return n*getFactorial(n-1);
     }
     
     
